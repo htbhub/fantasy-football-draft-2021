@@ -11,7 +11,7 @@ app.get('/', (request, response) =>{
 })
 
 //name is a query parameter and the key in the object above
-app.get('/api/:pick', (request, response) => {
+app.get('/api/Sheet1/pick/:pick', (request, response) => {
     const pickNumber = request.params.pick.toLowerCase()
     if( footballData[pickNumber] ){
         response.json(footballData[pickNumber])
