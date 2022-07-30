@@ -12,7 +12,7 @@ app.get('/', (request, response) =>{
 
 //name is a query parameter and the key in the object above
 app.get('/api/:pick', (request, response) => {
-    const pickNumber = request.params.pickNumber.toLowerCase()
+    const pickNumber = request.params.pick.toLowerCase()
     if( rappers[rapperName] ){
         response.json(footballData[pickNumber])
     }else{
