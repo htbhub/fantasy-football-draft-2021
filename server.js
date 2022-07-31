@@ -22,10 +22,10 @@ app.get('/api/:pick', (request, response) => {
 })
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on ${PORT}, betta go catch it!`)
-}) 
+})
 
 const footballData = {
-    "cmc":{
+    "1":{
         "Pick": 1,
         "Round": 1,
         "Last Name": "McCaffrey",
